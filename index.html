@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Premmoyi - Uponnash Library</title>
+  <meta name="description" content="Privacy Policy for Premmoyi - Uponnash Library - Bengali Ebook Reader App" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy-950: #0A1428;
+      --navy-900: #0D1A33;
+      --navy-800: #14264A;
+      --navy-700: #1C355F;
+      --line: rgba(255,255,255,0.08);
+      --line-soft: rgba(255,255,255,0.05);
+      --ink-1: #F4F6FB;
+      --ink-2: #C4CCDC;
+      --ink-3: #8792A8;
+      --ink-4: #5A6480;
+      --rose: #F92A6F;
+      --rose-dim: rgba(249,42,111,0.5);
+      --coral: #FA7847;
+      --mint: #35D398;
+      --mint-dim: rgba(53,211,152,0.5);
+      --gold: #E8B95B;
+      --radius-lg: 22px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+    }
+
+    body {
+      font-family: 'Inter', 'Hind Siliguri', sans-serif;
+      background:
+        radial-gradient(900px 500px at 12% -10%, rgba(249,42,111,0.10), transparent 60%),
+        radial-gradient(700px 500px at 100% 10%, rgba(53,211,152,0.06), transparent 55%),
+        var(--navy-950);
+      color: var(--ink-2);
+      line-height: 1.75;
+      min-height: 100vh;
+      padding: 3rem 1.25rem 5rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .bn { font-family: 'Hind Siliguri', 'Inter', sans-serif; }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--rose); outline-offset: 3px; border-radius: 4px; }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      padding: 3.25rem 2rem 2.75rem;
+      background: linear-gradient(160deg, var(--navy-700) 0%, var(--navy-900) 65%);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      margin-bottom: 2.25rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 30px 60px -30px rgba(0,0,0,0.6);
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -70px; right: -70px;
+      width: 240px; height: 240px;
+      background: radial-gradient(circle, rgba(249,42,111,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 240px; height: 240px;
+      background: radial-gradient(circle, rgba(53,211,152,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(249,42,111,0.10);
+      border: 1px solid rgba(249,42,111,0.28);
+      color: var(--rose);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .badge i { font-size: 10px; }
+
+    .app-icon {
+      width: 76px;
+      height: 76px;
+      background: linear-gradient(135deg, var(--coral), var(--rose));
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      color: #fff;
+      margin: 0 auto 1.4rem;
+      box-shadow: 0 14px 34px -6px rgba(249,42,111,0.45);
+      position: relative;
+    }
+
+    .header h1 {
+      font-family: 'Fraunces', 'Inter', serif;
+      font-size: 2.15rem;
+      font-weight: 600;
+      color: var(--ink-1);
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .header p.sub {
+      font-size: 0.95rem;
+      color: var(--ink-3);
+      font-weight: 500;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.75rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--line-soft);
+      border-radius: 100px;
+      padding: 7px 14px 7px 12px;
+    }
+    .meta-item i { color: var(--rose); font-size: 12px; width: 14px; text-align: center; }
+    .meta-item .label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-4);
+    }
+    .meta-item .value {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--ink-2);
+    }
+
+    /* ── Summary cards ── */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      gap: 0.9rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .summary-card {
+      background: var(--navy-800);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 1.4rem 1.15rem;
+      text-align: left;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+    .summary-card:hover { border-color: rgba(249,42,111,0.3); transform: translateY(-2px); }
+    .summary-card .icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(249,42,111,0.10);
+      color: var(--rose);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      margin-bottom: 0.9rem;
+    }
+    .summary-card.mint .icon { background: rgba(53,211,152,0.10); color: var(--mint); }
+    .summary-card .title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink-1);
+      margin-bottom: 4px;
+      letter-spacing: -0.01em;
+    }
+    .summary-card .desc {
+      font-size: 11.5px;
+      color: var(--ink-3);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    /* ── Sections ── */
+    .section {
+      background: var(--navy-800);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      padding: 1.9rem 1.9rem 2rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-bottom: 1.2rem;
+    }
+
+    .section-num {
+      width: 34px;
+      height: 34px;
+      background: linear-gradient(135deg, var(--coral), var(--rose));
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff;
+      flex-shrink: 0;
+      font-family: 'Fraunces', serif;
+    }
+
+    .section h2 {
+      font-family: 'Fraunces', 'Inter', serif;
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: var(--ink-1);
+      letter-spacing: -0.01em;
+    }
+
+    .section p {
+      font-size: 0.89rem;
+      color: var(--ink-3);
+      margin-bottom: 0.8rem;
+    }
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--ink-1); font-weight: 600; }
+
+    /* ── Not-collected chip row ── */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0.9rem 0 1.2rem;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--line);
+      color: var(--ink-3);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 7px 13px;
+      border-radius: 100px;
+    }
+    .chip i { color: #ef4444; font-size: 10.5px; }
+
+    /* ── Info / green boxes ── */
+    .info-box, .green-box {
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.15rem;
+      margin-top: 0.85rem;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .info-box {
+      background: rgba(249,42,111,0.06);
+      border: 1px solid rgba(249,42,111,0.18);
+    }
+    .green-box {
+      background: rgba(53,211,152,0.06);
+      border: 1px solid rgba(53,211,152,0.18);
+    }
+    .info-box i { color: var(--rose); font-size: 14px; margin-top: 2px; }
+    .green-box i { color: var(--mint); font-size: 14px; margin-top: 2px; }
+    .info-box p, .green-box p { font-size: 0.81rem; margin-bottom: 0 !important; }
+    .info-box p { color: #ff8fb4; }
+    .green-box p { color: #7fe8c3; }
+    .info-box strong, .green-box strong { color: inherit; }
+
+    /* ── Permission tags ── */
+    .perm-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 0.85rem;
+    }
+    .perm-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      background: rgba(255,255,255,0.025);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 0.95rem 1.05rem;
+    }
+    .perm-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 9px;
+      background: rgba(255,255,255,0.05);
+      color: var(--ink-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .perm-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--ink-1);
+      display: block;
+      margin-bottom: 3px;
+    }
+    .perm-desc {
+      font-size: 12px;
+      color: var(--ink-3);
+      line-height: 1.6;
+    }
+
+    /* ── Bullet list with icons ── */
+    .icon-list { margin-top: 0.9rem; display: flex; flex-direction: column; gap: 0.9rem; }
+    .icon-list .row { display: flex; gap: 12px; align-items: flex-start; }
+    .icon-list .row i {
+      color: var(--rose);
+      font-size: 13px;
+      margin-top: 4px;
+      width: 16px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .icon-list .row p { margin-bottom: 0; font-size: 0.89rem; color: var(--ink-3); }
+
+    /* ── Contact section ── */
+    .contact-card {
+      background: linear-gradient(150deg, rgba(249,42,111,0.10), rgba(250,120,71,0.04));
+      border: 1px solid rgba(249,42,111,0.22);
+      border-radius: var(--radius-md);
+      padding: 1.8rem;
+      text-align: center;
+      margin-top: 0.85rem;
+    }
+    .contact-card i.mail-icon {
+      font-size: 1.6rem;
+      color: var(--rose);
+      margin-bottom: 0.7rem;
+      display: block;
+    }
+    .contact-card .email {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink-1);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 0.35rem;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--rose-dim);
+      transition: border-color 0.2s ease;
+    }
+    .contact-card .email:hover { border-color: var(--rose); }
+    .contact-card p { color: var(--ink-3); font-size: 0.85rem; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      margin-top: 2.75rem;
+      padding-top: 1.75rem;
+      border-top: 1px solid var(--line-soft);
+      font-size: 12px;
+      color: var(--ink-4);
+    }
+    footer .heart { color: var(--rose); }
+    footer p + p { margin-top: 6px; }
+
+    @media (max-width: 500px) {
+      body { padding: 2rem 0.9rem 3.5rem; }
+      .header { padding: 2.5rem 1.4rem 2.1rem; }
+      .header h1 { font-size: 1.55rem; }
+      .section { padding: 1.4rem 1.3rem 1.5rem; }
+      .meta-row { gap: 6px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .summary-card { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- ── Header ── -->
+    <div class="header">
+      <div class="badge"><i class="fa-solid fa-scale-balanced"></i> Legal Document</div>
+      <div class="app-icon"><i class="fa-solid fa-book-open"></i></div>
+      <h1>Privacy Policy</h1>
+      <p class="sub bn">প্রেমময়ী - উপন্যাস লাইব্রেরি — Bengali Ebook Reader App</p>
+      <div class="meta-row">
+        <div class="meta-item">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span class="value bn">প্রেমময়ী - উপন্যাস লাইব্রেরি</span>
+        </div>
+        <div class="meta-item">
+          <i class="fa-solid fa-box-archive"></i>
+          <span class="value">com.premmoy.uponnash</span>
+        </div>
+        <div class="meta-item">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span class="value">Effective Aug 12, 2026</span>
+        </div>
+        <div class="meta-item">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <span class="value">Updated Aug 12, 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Summary Cards ── -->
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="icon"><i class="fa-solid fa-lock"></i></div>
+        <div class="title">No Sign-Up Required</div>
+        <div class="desc">No account creation or personal data needed</div>
+      </div>
+      <div class="summary-card">
+        <div class="icon"><i class="fa-solid fa-ban"></i></div>
+        <div class="title">No Ads or Tracking</div>
+        <div class="desc">We do not use any ad networks or trackers</div>
+      </div>
+      <div class="summary-card mint">
+        <div class="icon"><i class="fa-solid fa-folder-closed"></i></div>
+        <div class="title">Private Storage</div>
+        <div class="desc">Downloaded books stay in your device's private folder</div>
+      </div>
+      <div class="summary-card mint">
+        <div class="icon"><i class="fa-solid fa-globe"></i></div>
+        <div class="title">Internet Only</div>
+        <div class="desc">Used only to fetch and download ebook content</div>
+      </div>
+    </div>
+
+    <!-- ── Section 1 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">1</div>
+        <h2>Introduction & Scope</h2>
+      </div>
+      <p>
+        Welcome to <strong>প্রেমময়ী - উপন্যাস লাইব্রেরি (Premmoyi - Uponnash Library)</strong> — a free Bengali ebook and novel reader application for Android. This Privacy Policy is designed to help you understand what information we collect (or do not collect), how we use it, and your rights as a user.
+      </p>
+      <p>
+        By downloading or using the Premmoyi - Uponnash Library app, you agree to the terms described in this Privacy Policy. This policy complies with the <strong>Google Play Store Developer Program Policy</strong> and applicable privacy laws.
+      </p>
+      <div class="green-box">
+        <i class="fa-solid fa-circle-check"></i>
+        <p>This app does <strong>not</strong> require user registration, login, or any personally identifiable information (PII) to function.</p>
+      </div>
+    </div>
+
+    <!-- ── Section 2 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">2</div>
+        <h2>Information We Collect</h2>
+      </div>
+      <p>
+        We are committed to a minimal data approach. The Premmoyi - Uponnash Library app does <strong>not</strong> collect, transmit, or share the following types of sensitive personal information:
+      </p>
+      <div class="chip-row">
+        <span class="chip"><i class="fa-solid fa-xmark"></i>Name, email, or phone number</span>
+        <span class="chip"><i class="fa-solid fa-xmark"></i>Location data</span>
+        <span class="chip"><i class="fa-solid fa-xmark"></i>Contacts, camera, or mic</span>
+        <span class="chip"><i class="fa-solid fa-xmark"></i>Financial information</span>
+        <span class="chip"><i class="fa-solid fa-xmark"></i>Biometric data</span>
+      </div>
+
+      <p>The only data stored is on your device locally and includes:</p>
+      <div class="perm-list">
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-database"></i></div>
+          <div>
+            <span class="perm-title">Book List Cache</span>
+            <span class="perm-desc">Book metadata (title, author, thumbnail URL, view count) is temporarily cached in your device's local storage to enable faster loading and offline access to the home screen.</span>
+          </div>
+        </div>
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-book"></i></div>
+          <div>
+            <span class="perm-title">Downloaded Book Records</span>
+            <span class="perm-desc">A list of book IDs and their local file paths that you have downloaded is saved to your device's local storage. This lets the app know which books are available offline.</span>
+          </div>
+        </div>
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <div>
+            <span class="perm-title">Recent Search History</span>
+            <span class="perm-desc">Your in-app search terms are saved locally on your device only. This data is never transmitted to our servers. You can clear this at any time by uninstalling the app.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Section 3 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">3</div>
+        <h2>App Permissions Explained</h2>
+      </div>
+      <p>Our app requests only the minimum permissions necessary to function. Here is a detailed explanation of each permission:</p>
+      <div class="perm-list">
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-wifi"></i></div>
+          <div>
+            <span class="perm-title">INTERNET</span>
+            <span class="perm-desc">Required to fetch the ebook catalog (book titles, covers, descriptions) from our server at <strong style="color:var(--ink-2);">codevibestudio.com</strong> and to download PDF ebook files to your device.</span>
+          </div>
+        </div>
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-folder-open"></i></div>
+          <div>
+            <span class="perm-title">READ_EXTERNAL_STORAGE (Android 12 and below only)</span>
+            <span class="perm-desc">Used only on older Android versions (API level ≤ 32) to allow the app to access its own downloaded PDF files stored on the device. This permission is <strong style="color:var(--ink-2);">not requested</strong> on Android 13 and above.</span>
+          </div>
+        </div>
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-floppy-disk"></i></div>
+          <div>
+            <span class="perm-title">WRITE_EXTERNAL_STORAGE (Android 9 and below only)</span>
+            <span class="perm-desc">Used only on older Android versions (API level ≤ 29) to save downloaded PDF files to the device. On Android 10 and above, all files are saved to a completely private, app-specific internal directory that no other app can access.</span>
+          </div>
+        </div>
+      </div>
+      <div class="green-box" style="margin-top:1.25rem;">
+        <i class="fa-solid fa-shield-halved"></i>
+        <p><strong>Important:</strong> All downloaded PDF ebook files are saved to your device's <strong>private, app-specific internal storage</strong> (not the public Downloads folder). No other app or user can access these files.</p>
+      </div>
+    </div>
+
+    <!-- ── Section 4 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">4</div>
+        <h2>How We Use Information</h2>
+      </div>
+      <p>The minimal, non-personal data that interacts with our server is used solely for the following purposes:</p>
+      <div class="icon-list">
+        <div class="row">
+          <i class="fa-solid fa-server"></i>
+          <p><strong>Serving Ebook Content:</strong> When you open the app, it contacts our server to retrieve the list of available books, their cover images, and to update view counts. This is a standard API request and does not transmit any user-identifying information.</p>
+        </div>
+        <div class="row">
+          <i class="fa-solid fa-chart-line"></i>
+          <p><strong>View Count Tracking (Anonymous):</strong> When you open a book's detail page, an anonymous "view" count is incremented on our server. This is entirely anonymous and is only used to determine which books are popular. No user identity is linked to this action.</p>
+        </div>
+        <div class="row">
+          <i class="fa-solid fa-download"></i>
+          <p><strong>Downloading PDF Files:</strong> When you download a book, the PDF file is fetched from our server and stored locally on your device.</p>
+        </div>
+      </div>
+      <div class="info-box">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>We do <strong>not</strong> use your information for marketing, profiling, behavioral advertising, or share it with any third-party advertising networks.</p>
+      </div>
+    </div>
+
+    <!-- ── Section 5 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">5</div>
+        <h2>Third-Party Services</h2>
+      </div>
+      <p>
+        The Premmoyi - Uponnash Library app does <strong>not</strong> integrate any third-party advertising SDKs, analytics platforms (such as Firebase Analytics, Google Analytics, or Facebook SDK), or social media login services.
+      </p>
+      <p>
+        The app is distributed through the <strong>Google Play Store</strong>. Google may collect certain device and usage information in accordance with their own Privacy Policy as part of their standard platform services. We encourage you to review <a href="https://policies.google.com/privacy" style="color:var(--rose);">Google's Privacy Policy</a> for more information.
+      </p>
+    </div>
+
+    <!-- ── Section 6 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">6</div>
+        <h2>Data Security & Retention</h2>
+      </div>
+      <p>
+        We take data security seriously. All communication between the app and our server is conducted over <strong>HTTPS (SSL/TLS encryption)</strong>, which protects data in transit.
+      </p>
+      <p>
+        All data stored on your device (book cache, downloaded file list, search history) is retained locally until you uninstall the app, at which point all data is automatically deleted by the Android operating system. We do not maintain any user database or backend storage linked to individual users.
+      </p>
+    </div>
+
+    <!-- ── Section 7 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">7</div>
+        <h2>Children's Privacy</h2>
+      </div>
+      <p>
+        The Premmoyi - Uponnash Library app is a general-audience Bengali novel and ebook reading platform. Since we do not collect any personal information from any of our users, we also do not knowingly collect personal information from children under the age of 13. Our app complies with the <strong>Children's Online Privacy Protection Act (COPPA)</strong>.
+      </p>
+      <p>
+        If you are a parent or guardian and believe your child has provided personal information through the app, please contact us at the email below and we will take immediate steps to address the concern.
+      </p>
+    </div>
+
+    <!-- ── Section 8 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">8</div>
+        <h2>Your Rights & Choices</h2>
+      </div>
+      <p>As a user, you have full control over your data:</p>
+      <div class="icon-list">
+        <div class="row">
+          <i class="fa-solid fa-trash-can"></i>
+          <p><strong>Delete Downloaded Books:</strong> You can delete any downloaded book directly from within the app's Library tab at any time.</p>
+        </div>
+        <div class="row">
+          <i class="fa-solid fa-broom"></i>
+          <p><strong>Clear All App Data:</strong> Go to your device's <strong>Settings → Apps → Premmoyi → Clear Data</strong> to erase all locally stored information.</p>
+        </div>
+        <div class="row">
+          <i class="fa-solid fa-trash-arrow-up"></i>
+          <p><strong>Uninstall:</strong> Uninstalling the app will permanently remove all locally stored data from your device.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Section 9 ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">9</div>
+        <h2>Changes to This Privacy Policy</h2>
+      </div>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes in our app's features or applicable laws. When we make changes, we will update the <strong>"Last Updated"</strong> date at the top of this page.
+      </p>
+      <p>
+        We encourage you to review this policy periodically. Continued use of the app after any changes constitutes your acceptance of the updated policy. For significant changes, we will make a reasonable effort to notify you through an in-app notice or on our contact page.
+      </p>
+    </div>
+
+    <!-- ── Section 10: Contact ── -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-num">10</div>
+        <h2>Contact Us</h2>
+      </div>
+      <p>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please do not hesitate to reach out to us:
+      </p>
+      <div class="contact-card">
+        <i class="fa-regular fa-envelope mail-icon"></i>
+        <p>Email us at</p>
+        <a href="mailto:premmoyuponnash@gmail.com" class="email"><i class="fa-solid fa-paper-plane" style="font-size:13px;"></i>premmoyuponnash@gmail.com</a>
+        <p style="margin-top:0.75rem;">We aim to respond to all inquiries within 48 hours.</p>
+      </div>
+    </div>
+
+    <!-- ── Footer ── -->
+    <footer>
+      <p>© 2026 <span class="bn">প্রেমময়ী - উপন্যাস লাইব্রেরি</span> — All rights reserved.</p>
+      <p>App ID: com.premmoy.uponnash &nbsp;·&nbsp; This policy is hosted on GitHub Pages.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
