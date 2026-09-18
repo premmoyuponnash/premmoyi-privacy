@@ -197,6 +197,7 @@
       margin-bottom: 0.9rem;
     }
     .summary-card.mint .icon { background: rgba(53,211,152,0.10); color: var(--mint); }
+    .summary-card.gold .icon { background: rgba(232,185,91,0.10); color: var(--gold); }
     .summary-card .title {
       font-size: 13px;
       font-weight: 700;
@@ -280,7 +281,7 @@
     .chip i { color: #ef4444; font-size: 10.5px; }
 
     /* ── Info / green boxes ── */
-    .info-box, .green-box {
+    .info-box, .green-box, .gold-box {
       border-radius: var(--radius-sm);
       padding: 1rem 1.15rem;
       margin-top: 0.85rem;
@@ -296,12 +297,20 @@
       background: rgba(53,211,152,0.06);
       border: 1px solid rgba(53,211,152,0.18);
     }
+    .gold-box {
+      background: rgba(232,185,91,0.06);
+      border: 1px solid rgba(232,185,91,0.22);
+    }
     .info-box i { color: var(--rose); font-size: 14px; margin-top: 2px; }
     .green-box i { color: var(--mint); font-size: 14px; margin-top: 2px; }
-    .info-box p, .green-box p { font-size: 0.81rem; margin-bottom: 0 !important; }
+    .gold-box i { color: var(--gold); font-size: 14px; margin-top: 2px; }
+    .info-box p, .green-box p, .gold-box p { font-size: 0.81rem; margin-bottom: 0 !important; }
     .info-box p { color: #ff8fb4; }
     .green-box p { color: #7fe8c3; }
-    .info-box strong, .green-box strong { color: inherit; }
+    .gold-box p { color: #f0d08a; }
+    .info-box strong { color: inherit; }
+    .green-box strong { color: inherit; }
+    .gold-box strong { color: inherit; }
 
     /* ── Permission tags ── */
     .perm-list {
@@ -438,22 +447,23 @@
         </div>
         <div class="meta-item">
           <i class="fa-solid fa-clock-rotate-left"></i>
-          <span class="value">Updated Aug 12, 2026</span>
+          <span class="value">Updated Sep 18, 2026</span>
         </div>
       </div>
     </div>
 
     <!-- ── Summary Cards ── -->
+    <!-- ✅ CHANGED: "No Ads or Tracking" → "Google AdMob Ads" -->
     <div class="summary-grid">
       <div class="summary-card">
         <div class="icon"><i class="fa-solid fa-lock"></i></div>
         <div class="title">No Sign-Up Required</div>
         <div class="desc">No account creation or personal data needed</div>
       </div>
-      <div class="summary-card">
-        <div class="icon"><i class="fa-solid fa-ban"></i></div>
-        <div class="title">No Ads or Tracking</div>
-        <div class="desc">We do not use any ad networks or trackers</div>
+      <div class="summary-card gold">
+        <div class="icon"><i class="fa-solid fa-rectangle-ad"></i></div>
+        <div class="title">Google AdMob Ads</div>
+        <div class="desc">We use Google AdMob to display ads. See Section 5 for full details.</div>
       </div>
       <div class="summary-card mint">
         <div class="icon"><i class="fa-solid fa-folder-closed"></i></div>
@@ -463,7 +473,7 @@
       <div class="summary-card mint">
         <div class="icon"><i class="fa-solid fa-globe"></i></div>
         <div class="title">Internet Only</div>
-        <div class="desc">Used only to fetch and download ebook content</div>
+        <div class="desc">Used to fetch ebook content and serve ads</div>
       </div>
     </div>
 
@@ -477,7 +487,7 @@
         Welcome to <strong>প্রেমময়ী - উপন্যাস লাইব্রেরি (Premmoyi - Uponnash Library)</strong> — a free Bengali ebook and novel reader application for Android. This Privacy Policy is designed to help you understand what information we collect (or do not collect), how we use it, and your rights as a user.
       </p>
       <p>
-        By downloading or using the Premmoyi - Uponnash Library app, you agree to the terms described in this Privacy Policy. This policy complies with the <strong>Google Play Store Developer Program Policy</strong> and applicable privacy laws.
+        By downloading or using the Premmoyi - Uponnash Library app, you agree to the terms described in this Privacy Policy. This policy complies with the <strong>Google Play Store Developer Program Policy</strong>, <strong>Google AdMob Program Policies</strong>, and applicable privacy laws.
       </p>
       <div class="green-box">
         <i class="fa-solid fa-circle-check"></i>
@@ -502,7 +512,7 @@
         <span class="chip"><i class="fa-solid fa-xmark"></i>Biometric data</span>
       </div>
 
-      <p>The only data stored is on your device locally and includes:</p>
+      <p>The only data stored by us is on your device locally and includes:</p>
       <div class="perm-list">
         <div class="perm-item">
           <div class="perm-icon"><i class="fa-solid fa-database"></i></div>
@@ -526,6 +536,9 @@
           </div>
         </div>
       </div>
+      <p style="margin-top:0.9rem;">
+        Please note that <strong>Google AdMob</strong> (our advertising partner) may also collect certain data as described in Section 5.
+      </p>
     </div>
 
     <!-- ── Section 3 ── -->
@@ -540,7 +553,7 @@
           <div class="perm-icon"><i class="fa-solid fa-wifi"></i></div>
           <div>
             <span class="perm-title">INTERNET</span>
-            <span class="perm-desc">Required to fetch the ebook catalog (book titles, covers, descriptions) from our server at <strong style="color:var(--ink-2);">codevibestudio.com</strong> and to download PDF ebook files to your device.</span>
+            <span class="perm-desc">Required to fetch the ebook catalog (book titles, covers, descriptions) from our server at <strong style="color:var(--ink-2);">codevibestudio.com</strong>, to download PDF ebook files to your device, and to serve advertisements via Google AdMob.</span>
           </div>
         </div>
         <div class="perm-item">
@@ -584,24 +597,78 @@
           <i class="fa-solid fa-download"></i>
           <p><strong>Downloading PDF Files:</strong> When you download a book, the PDF file is fetched from our server and stored locally on your device.</p>
         </div>
+        <div class="row">
+          <i class="fa-solid fa-rectangle-ad"></i>
+          <p><strong>Serving Advertisements:</strong> We use Google AdMob to serve ads within the app. AdMob may use certain data (such as your Advertising ID) to show relevant ads. See Section 5 for full details.</p>
+        </div>
       </div>
+      <!-- ✅ CHANGED: Removed the contradictory "no ad networks" statement -->
       <div class="info-box">
         <i class="fa-solid fa-triangle-exclamation"></i>
-        <p>We do <strong>not</strong> use your information for marketing, profiling, behavioral advertising, or share it with any third-party advertising networks.</p>
+        <p>We do <strong>not</strong> sell your personal information to any third party. We do not use your data for marketing or profiling beyond what is necessary to serve ads through Google AdMob, as described in Section 5.</p>
       </div>
     </div>
 
-    <!-- ── Section 5 ── -->
+    <!-- ── Section 5 — FULLY REWRITTEN for AdMob compliance ── -->
     <div class="section">
       <div class="section-header">
         <div class="section-num">5</div>
-        <h2>Third-Party Services</h2>
+        <h2>Third-Party Services & Advertising (Google AdMob)</h2>
       </div>
+
       <p>
-        The Premmoyi - Uponnash Library app does <strong>not</strong> integrate any third-party advertising SDKs, analytics platforms (such as Firebase Analytics, Google Analytics, or Facebook SDK), or social media login services.
+        The Premmoyi - Uponnash Library app uses <strong>Google AdMob</strong> (provided by Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA) to display advertisements within the app. AdMob helps us keep the app free for all users.
       </p>
+
       <p>
-        The app is distributed through the <strong>Google Play Store</strong>. Google may collect certain device and usage information in accordance with their own Privacy Policy as part of their standard platform services. We encourage you to review <a href="https://policies.google.com/privacy" style="color:var(--rose);">Google's Privacy Policy</a> for more information.
+        By using our app, you acknowledge that Google AdMob may collect and use certain data to serve ads. This data may include:
+      </p>
+
+      <div class="perm-list">
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-fingerprint"></i></div>
+          <div>
+            <span class="perm-title">Android Advertising ID (Ad ID)</span>
+            <span class="perm-desc">A resettable device identifier used by Google to serve personalized or non-personalized ads. You can reset or delete your Ad ID at any time via: <strong style="color:var(--ink-2);">Settings → Google → Ads → Delete advertising ID</strong>.</span>
+          </div>
+        </div>
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div>
+            <span class="perm-title">IP Address & Device Information</span>
+            <span class="perm-desc">Used by Google for ad targeting, fraud prevention, frequency capping, and measuring ad performance.</span>
+          </div>
+        </div>
+        <div class="perm-item">
+          <div class="perm-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <div>
+            <span class="perm-title">App & Device Interaction Data</span>
+            <span class="perm-desc">Information about how you interact with ads (e.g., views, clicks) may be collected by Google to measure ad performance and improve ad relevance.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="gold-box" style="margin-top:1.1rem;">
+        <i class="fa-solid fa-circle-info"></i>
+        <p>
+          <strong>Google's Data Use:</strong> To learn how Google uses data when you use apps that use its services, please visit:
+          <a href="https://policies.google.com/technologies/partner-sites" style="color:var(--gold); text-decoration:underline;">policies.google.com/technologies/partner-sites</a>
+        </p>
+      </div>
+
+      <div class="green-box" style="margin-top:0.75rem;">
+        <i class="fa-solid fa-circle-check"></i>
+        <p>
+          <strong>Opt-Out of Personalized Ads:</strong> You can opt out of personalized advertising by visiting
+          <a href="https://www.google.com/settings/ads" style="color:var(--mint); text-decoration:underline;">google.com/settings/ads</a>
+          or by deleting your Android Advertising ID in your device settings.
+        </p>
+      </div>
+
+      <p style="margin-top:1rem;">
+        Additionally, the app is distributed through the <strong>Google Play Store</strong>. Google may collect certain device and usage information in accordance with their own
+        <a href="https://policies.google.com/privacy" style="color:var(--rose);">Privacy Policy</a>
+        as part of their standard platform services.
       </p>
     </div>
 
@@ -650,6 +717,10 @@
           <p><strong>Clear All App Data:</strong> Go to your device's <strong>Settings → Apps → Premmoyi → Clear Data</strong> to erase all locally stored information.</p>
         </div>
         <div class="row">
+          <i class="fa-solid fa-rectangle-ad"></i>
+          <p><strong>Opt Out of Personalized Ads:</strong> Go to <strong>Settings → Google → Ads → Delete advertising ID</strong> on your device, or visit <a href="https://www.google.com/settings/ads" style="color:var(--rose);">google.com/settings/ads</a> to manage your ad preferences.</p>
+        </div>
+        <div class="row">
           <i class="fa-solid fa-trash-arrow-up"></i>
           <p><strong>Uninstall:</strong> Uninstalling the app will permanently remove all locally stored data from your device.</p>
         </div>
@@ -696,3 +767,4 @@
   </div>
 </body>
 </html>
+
